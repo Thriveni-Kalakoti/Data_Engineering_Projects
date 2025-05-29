@@ -1,10 +1,10 @@
-# ⚙️ Data Engineering Projects
+# Data Engineering Projects
 
 This repository contains practical projects focused on **data engineering** concepts like **ETL pipelines**, **data cleaning**, **automation**, and **batch processing** using Python and SQL.
 
 ---
 
-## 📁 Projects Included
+## Projects Included
 
 | Project | Description | Tools/Tech |
 |--------|-------------|------------|
@@ -12,7 +12,7 @@ This repository contains practical projects focused on **data engineering** conc
 
 ---
 
-## 📌 Project Structure
+## Project Structure
 
 Each project folder contains:
 
@@ -22,7 +22,7 @@ Each project folder contains:
 
 ---
 
-## 🛠 Tools & Technologies
+## Tools & Technologies
 
 - Python (Pandas, OS, Glob)
 - SQL (SQLite, BigQuery)
@@ -32,7 +32,7 @@ Each project folder contains:
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 - Build and simulate **real-time data pipelines**
 - Automate data ingestion, transformation, and export processes
@@ -42,14 +42,14 @@ Each project folder contains:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Each project can be run locally with Python 3.8+.  
 Notebooks are also compatible with **Google Colab** for ease of use and sharing.
 
 ---
 
-## 📌 Notes
+## Notes
 
 - These projects are part of my continuous journey to gain hands-on data engineering experience.
 - The code is kept clean, modular, and beginner-friendly with inline comments.
