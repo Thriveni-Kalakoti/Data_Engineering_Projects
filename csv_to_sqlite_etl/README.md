@@ -41,3 +41,4 @@ Dataset: [Superstore Sales Dataset on Kaggle](https://www.kaggle.com/datasets/vi
 2. Run the Python script:
    ```bash
    python etl_script.py
+3. A new file named superstore.db will be created. You can query it using any SQLite viewer or browser plugin.
