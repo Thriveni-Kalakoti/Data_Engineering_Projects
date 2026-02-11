@@ -22,19 +22,20 @@ The goal of this project is to simulate a basic data engineering workflow:
 
 ```
 .
+├── .github
+│   └── workflows
+│       └── ci.yml
+├── .gitignore
+├── data
+│   └── superstore.csv
+├── output
+│   └── superstore.db
 ├── README.md
 ├── requirements.txt
-├── .gitignore
-├── data/
-│   └── superstore.csv
-├── src/
+├── src
 │   ├── db.py
 │   └── etl.py
-├── output/
-│   └── superstore.db   (auto-generated, ignored by git)
-└── .github/
-    └── workflows/
-        └── ci.yml
+└── tests
 ```
 
 ### Folder Explanation
