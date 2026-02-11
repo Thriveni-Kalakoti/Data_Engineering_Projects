@@ -8,6 +8,7 @@ This repository contains practical projects focused on **data engineering** conc
 
 | Project | Description | Tools/Tech |
 |--------|-------------|------------|
+|CSV to SQLite ETL Pipeline | Built a modular ETL pipeline to extract raw sales data from CSV, perform data validation and cleaning, and load the transformed data into a SQLite database. | Python, Pandas, SQLite, Git, GitHub Actions |
 
 
 ---
