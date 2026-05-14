@@ -1,5 +1,5 @@
 import pandas as pd
-from db import get_connection
+from src.db import get_connection
 
 REQUIRED_COLUMNS = [
     "Order ID", "Order Date", "Ship Date", "Customer ID",
