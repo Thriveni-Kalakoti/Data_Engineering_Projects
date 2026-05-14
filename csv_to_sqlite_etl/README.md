@@ -20,31 +20,34 @@ The goal of this project is to simulate a basic data engineering workflow:
 
 ## Project Structure
 
-```
-.
-├── .github
-│   └── workflows
-│       └── ci.yml
+```text
+csv_to_sqlite_etl/
 ├── .gitignore
-├── data
-│   └── superstore.csv
-├── output
-│   └── superstore.db
 ├── README.md
 ├── requirements.txt
-├── src
+├── data/
+│   └── superstore.csv
+├── output/
+│   └── superstore.db
+├── src/
+│   ├── __init__.py
 │   ├── db.py
 │   └── etl.py
-└── tests
+└── tests/
+    └── test_imports.py
 ```
 
-### Folder Explanation
+Folder explanation:
 
-- `data/` → Contains raw input dataset  
-- `src/` → Contains ETL pipeline source code  
-- `output/` → Contains generated SQLite database (not tracked in git)  
-- `.github/workflows/` → Basic CI configuration  
+- `data/` → Stores the raw input CSV file.
+- `output/` → Stores the generated SQLite database file.
+- `src/` → Contains the ETL source code.
+- `src/db.py` → Handles SQLite database connection logic.
+- `src/etl.py` → Handles extract, transform, and load pipeline steps.
+- `src/__init__.py` → Makes `src` importable as a Python package.
+- `tests/` → Contains basic pytest tests for validating imports and project structure.
 
+> Note: The GitHub Actions workflow for this project is stored at the repository root under `.github/workflows/ci.yml`, which is the correct location for GitHub Actions to run.
 ---
 
 ## Tools & Libraries Used
@@ -117,6 +120,24 @@ output/superstore.db
 ```
 
 ---
+
+
+## Run Tests Locally
+
+From inside the `csv_to_sqlite_etl` folder, run:
+
+```bash
+pytest tests
+```
+
+Expected output:
+
+```text
+2 passed
+```
+
+These tests confirm that the ETL and database modules can be imported correctly.
+
 
 ## Verifying the Output
 
