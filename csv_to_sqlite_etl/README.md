@@ -48,15 +48,16 @@ Folder explanation:
 - `tests/` → Contains basic pytest tests for validating imports and project structure.
 
 > Note: The GitHub Actions workflow for this project is stored at the repository root under `.github/workflows/ci.yml`, which is the correct location for GitHub Actions to run.
+> 
 ---
 
 ## Tools & Libraries Used
 
 - **Python 3.9+**
 - **Pandas** – Data manipulation and cleaning
-- **SQLite3** – Lightweight relational database (built into Python)
-- **GitHub Actions** – Basic CI workflow
-
+- **SQLite3** – Lightweight relational database built into Python
+- **Pytest** – Basic testing framework used to validate project imports
+- **GitHub Actions** – CI workflow used to run checks automatically on GitHub
 ---
 
 ## Data Source
@@ -79,8 +80,8 @@ data/superstore.csv
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd csv-to-sqlite-etl
+git clone https://github.com/Thriveni-Kalakoti/Data_Engineering_Projects.git
+cd Data_Engineering_Projects/csv_to_sqlite_etl
 ```
 
 ### 2. Create virtual environment
@@ -94,6 +95,7 @@ source .venv/bin/activate
 
 ```bash
 pip install -r requirements.txt
+pip install pytest
 ```
 
 ---
