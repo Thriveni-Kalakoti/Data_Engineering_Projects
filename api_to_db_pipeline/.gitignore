@@ -1,0 +1,23 @@
+# Output files
+output/*.db
+output/*.csv
+output/*.json
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# Test cache
+.pytest_cache/
+
+# Environment variables
+.env
+
+# Editor settings
+.vscode/
+
+# macOS files
+.DS_Store
