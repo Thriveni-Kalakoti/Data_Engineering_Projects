@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - feature/**
   pull_request:
     branches:
       - main
@@ -35,5 +36,21 @@ jobs:
 
       - name: Run CSV to SQLite ETL tests
         working-directory: csv_to_sqlite_etl
+        run: |
+          pytest tests
+
+      - name: Install API to DB Pipeline dependencies
+        working-directory: api_to_db_pipeline
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Compile API to DB Pipeline Python files
+        working-directory: api_to_db_pipeline
+        run: |
+          python -m compileall src
+
+      - name: Run API to DB Pipeline tests
+        working-directory: api_to_db_pipeline
         run: |
           pytest tests
