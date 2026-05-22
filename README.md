@@ -33,20 +33,30 @@ More projects will be added gradually as this portfolio grows.
 
 ---
 
-## 📁 Repository Structure
+## 📂 Repository Structure
 
 ```text
 Data_Engineering_Projects/
 ├── README.md
-└── csv_to_sqlite_etl/
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+├── csv_to_sqlite_etl/
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── .gitignore
+│   ├── data/
+│   ├── output/
+│   ├── src/
+│   └── tests/
+└── api_to_db_pipeline/
     ├── README.md
     ├── requirements.txt
     ├── .gitignore
     ├── data/
-    ├── src/
     ├── output/
-    └── .github/
-        └── workflows/
+    ├── src/
+    └── tests/
 ```
 
 ---
