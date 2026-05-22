@@ -26,7 +26,8 @@ This repository is focused on building practical Data Engineering experience thr
 
 | Project | Status | Focus Area | Tools |
 |---|---|---|---|
-| CSV to SQLite ETL Pipeline | Completed | Batch ETL, data cleaning, SQLite loading, validation | Python, Pandas, SQLite, GitHub Actions |
+| CSV to SQLite ETL Pipeline | Completed | Batch ETL, data cleaning, SQLite loading, validation | Python, Pandas, SQLite, Pytest, GitHub Actions |
+| API to Database Pipeline | Completed | REST API ingestion, JSON transformation, SQLite loading, validation | Python, requests, Pandas, SQLite, Pytest, GitHub Actions |
 
 More projects will be added gradually as this portfolio grows.
 
