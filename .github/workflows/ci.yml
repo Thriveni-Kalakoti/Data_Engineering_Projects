@@ -96,3 +96,19 @@ jobs:
         working-directory: dockerized_data_pipeline
         run: |
           docker run --rm dockerized-data-pipeline
+
+      - name: Install Airflow ETL Pipeline dependencies
+        working-directory: airflow_etl_pipeline
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Compile Airflow ETL Pipeline Python files
+        working-directory: airflow_etl_pipeline
+        run: |
+          python -m compileall src dags
+
+      - name: Run Airflow ETL Pipeline tests
+        working-directory: airflow_etl_pipeline
+        run: |
+          pytest tests

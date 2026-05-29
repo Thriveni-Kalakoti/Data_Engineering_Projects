@@ -1,0 +1,29 @@
+# Output files
+output/*.csv
+output/*.json
+output/*.db
+
+# Airflow local files
+airflow.db
+airflow.cfg
+webserver_config.py
+logs/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# Test cache
+.pytest_cache/
+
+# Environment variables
+.env
+
+# Editor settings
+.vscode/
+
+# macOS files
+.DS_Store
