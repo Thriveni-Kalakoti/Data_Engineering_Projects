@@ -70,3 +70,29 @@ jobs:
         working-directory: postgres_sql_validation
         run: |
           pytest tests
+
+      - name: Install Dockerized Data Pipeline dependencies
+        working-directory: dockerized_data_pipeline
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Compile Dockerized Data Pipeline Python files
+        working-directory: dockerized_data_pipeline
+        run: |
+          python -m compileall src
+
+      - name: Run Dockerized Data Pipeline tests
+        working-directory: dockerized_data_pipeline
+        run: |
+          pytest tests
+
+      - name: Build Dockerized Data Pipeline image
+        working-directory: dockerized_data_pipeline
+        run: |
+          docker build -t dockerized-data-pipeline .
+
+      - name: Run Dockerized Data Pipeline container
+        working-directory: dockerized_data_pipeline
+        run: |
+          docker run --rm dockerized-data-pipeline
