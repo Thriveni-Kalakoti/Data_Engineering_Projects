@@ -1,0 +1,7 @@
+order_id,order_date,customer_id,product_category,order_amount,quantity,country,payment_status
+ORD-001,2024-01-01,CUST-001,Electronics,1200.50,1,USA,paid
+ORD-002,2024-01-02,CUST-002,Furniture,450.00,2,USA,paid
+ORD-003,2024-01-03,CUST-003,Office Supplies,85.75,5,Canada,pending
+ORD-004,2024-01-04,CUST-004,Electronics,,1,USA,failed
+ORD-005,2024-01-05,CUST-005,Furniture,300.25,3,India,paid
+ORD-006,2024-01-06,CUST-006,Office Supplies,-25.00,1,USA,paid
