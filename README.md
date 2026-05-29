@@ -31,6 +31,7 @@ This repository is focused on building practical Data Engineering experience thr
 | PostgreSQL-Style SQL Validation Pipeline | Completed | SQL validation, data quality checks, database load validation | Python, Pandas, SQL, SQLite, Pytest, GitHub Actions |
 | Dockerized Data Pipeline | Completed | Containerized ETL, reproducible pipeline execution, Docker validation | Python, Pandas, Docker, Pytest, GitHub Actions |
 | Airflow ETL Pipeline | Completed | Workflow orchestration, DAG validation, ETL scheduling concepts | Python, Pandas, Apache Airflow, Pytest, GitHub Actions |
+| Cloud Data Warehouse Pipeline | Completed | Cloud warehouse preparation, BigQuery-style SQL, data quality checks | Python, Pandas, SQL, BigQuery-style queries, Pytest, GitHub Actions |
 
 More projects will be added gradually as this portfolio grows.
 
@@ -86,6 +87,15 @@ Data_Engineering_Projects/
 │   ├── dags/
 │   ├── data/
 │   ├── output/
+│   ├── src/
+│   └── tests/
+├── cloud_data_warehouse_pipeline/
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── .gitignore
+│   ├── data/
+│   ├── output/
+│   ├── sql/
 │   ├── src/
 │   └── tests/
 
