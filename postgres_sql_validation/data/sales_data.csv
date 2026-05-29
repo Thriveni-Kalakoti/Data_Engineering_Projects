@@ -1,0 +1,6 @@
+order_id,order_date,customer_id,product_category,sales,quantity,region
+ORD-001,2024-01-01,CUST-001,Technology,1200.50,2,East
+ORD-002,2024-01-02,CUST-002,Furniture,450.00,1,West
+ORD-003,2024-01-03,CUST-003,Office Supplies,85.75,5,Central
+ORD-004,2024-01-04,CUST-004,Technology,999.99,1,South
+ORD-005,2024-01-05,CUST-005,Furniture,300.25,3,East
