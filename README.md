@@ -29,12 +29,12 @@ This repository is focused on building practical Data Engineering experience thr
 | CSV to SQLite ETL Pipeline | Completed | Batch ETL, data cleaning, SQLite loading, validation | Python, Pandas, SQLite, Pytest, GitHub Actions |
 | API to Database Pipeline | Completed | REST API ingestion, JSON transformation, SQLite loading, validation | Python, requests, Pandas, SQLite, Pytest, GitHub Actions |
 | PostgreSQL-Style SQL Validation Pipeline | Completed | SQL validation, data quality checks, database load validation | Python, Pandas, SQL, SQLite, Pytest, GitHub Actions |
+| Dockerized Data Pipeline | Completed | Containerized ETL, reproducible pipeline execution, Docker validation | Python, Pandas, Docker, Pytest, GitHub Actions |
 
 More projects will be added gradually as this portfolio grows.
 
 ---
 
-## 📂 Repository Structure
 
 ## 📂 Repository Structure
 
@@ -60,13 +60,22 @@ Data_Engineering_Projects/
 │   ├── output/
 │   ├── src/
 │   └── tests/
-└── postgres_sql_validation/
+├── postgres_sql_validation/
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── .gitignore
+│   ├── data/
+│   ├── output/
+│   ├── sql/
+│   ├── src/
+│   └── tests/
+└── dockerized_data_pipeline/
     ├── README.md
     ├── requirements.txt
     ├── .gitignore
+    ├── Dockerfile
     ├── data/
     ├── output/
-    ├── sql/
     ├── src/
     └── tests/
 ```
